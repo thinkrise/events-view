@@ -1,7 +1,7 @@
 {
-  "name": "yirga",
+  "name": "events-view",
   "version": "0.0.1",
-  "description": "Source and discover the best coffee near you.",
+  "description": "Single events view page for Rise.",
   "author": "Phil J. Laszkowicz <phil@fillip.pro> (https://github.com/siilime)",
   "contributors": [
     "Ed Newland-Pratt <epgnewlandpratt@gmail.com> (https://github.com/ednp)",
@@ -9,18 +9,18 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/siilime/yirga.git"
+    "url": "https://github.com/Rise-Hub/events-view.git"
   },
-  "license": "(LicenseRef-LICENSE)",
+  "license": "(MIT)",
   "config": {
-    "port": "4001"
+    "port": "4401"
   },
   "scripts": {
-    "start": "node ./bin/yirga.js &"
+    "start": "node ./bin/events-view.js &"
   },
   "main": "./app/index.js",
   "bin": {
-    "yirga": "./app/index.js"
+    "events-view": "./app/index.js"
   },
   "preferGlobal": false,
   "private": true,

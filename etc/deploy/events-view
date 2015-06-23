@@ -1,11 +1,11 @@
 upstream yirga {
-  server 127.0.0.1:4001;
+  server 127.0.0.1:4401;
 }
 
 server {
   listen 80;
   client_max_body_size 4G;
-  server_name beta.omnijar.coffee;
+  server_name events.omnijar.org;
 
   keepalive_timeout 5;
 
@@ -13,6 +13,6 @@ server {
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
     proxy_set_header Host $http_host;
     proxy_redirect off;
-    proxy_pass http://yirga;
+    proxy_pass http://events-view;
   }
 }

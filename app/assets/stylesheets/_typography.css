@@ -1,0 +1,37 @@
+
+%headingN3{
+  font-size: $fontSize-xlarge;
+  line-height: $fontSize-xxxlarge;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: $fontSize-normal;
+  border-bottom: 1px solid $grey;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  font-family: $fontFace-paragraph;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $black;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: $fontFace-heading;
+  font-weight: 700;
+}
+
+p{
+  margin-bottom: $lineHeight-xxxsmall;
+}
+
+a{
+  color: $navy;
+
+  &:active,
+  &:hover,
+  &:focus,
+  &.is-active{
+    text-decoration: underline;
+  }
+}

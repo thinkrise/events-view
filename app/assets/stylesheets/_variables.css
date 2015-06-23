@@ -1,0 +1,67 @@
+// Colours
+$white:     rgb(255,255,255);   // #-FFFFFF
+$hintGrey:  rgb(242,242,242);   // #-f2f2f2
+$lightGrey: rgb(230,230,230);   // #-e6e6e6
+$grey:      rgb(153,153,153);   // #-6D6D6D
+$silver:    rgb(109, 109, 109); // #-999999
+$darkGrey:  rgb(77, 77, 77);    // #-4d4d4d
+$black:     rgb(25,25,25);      // #-191919
+
+// $blue:      #127A97;   // #-#0CA5B0
+// $blue:      #605C5B;   // #-#0CA5B0
+$blue:      #47aece;   // #-#0CA5B0
+// $blue:      rgb(108,143,164);   // #-6c8fa3
+// $navy:      rgb(54,90,110);     // #-$navy
+$navy:      #2b779b;     // #-$navy
+$brown: #574C41;
+$brown2: #6B5D4D;
+$cream: #DFCDB4;
+
+
+// Breakpoints
+$mq-level0:             1070px;
+$mq-level1:             1060px;
+$mq-level2:             780px;
+$mq-level3:             480px;
+
+$mediaDesktop:          "(min-width: #{$mq-level0})";
+$mediaTablet:           "(max-width: #{$mq-level1})";
+$mediaMobile:           "(max-width: #{$mq-level2})";
+
+$defaultAnimationCurve: cubic-bezier(0.38, 0.40, 0.19, 0.95);
+$defaultAnimation:      0.3s $defaultAnimationCurve;
+
+//
+// Typography
+//
+
+$fontSize-base: 16px;
+$ms-base: 1rem 4rem; // 16px 48px
+$ms-ratio: $fifth;
+
+$fontFace-paragraph:    Georgia, serif;
+$fontFace-heading:      'Playfair Display', Georgia, serif;
+$fontFace-sans:         Helvetica, Arial, sans-serif;
+
+$fontSize-xxxsmall:     ms(-4, $ms-base, $ms-ratio);    // .44444rem
+$fontSize-xxsmall:      ms(-3, $ms-base, $ms-ratio);    // .52675rem
+$fontSize-xsmall:       ms(-2, $ms-base, $ms-ratio);    // .66667rem
+$fontSize-small:        ms(-1, $ms-base, $ms-ratio);    // .79012rem
+$fontSize-normal:       ms(0, $ms-base,  $ms-ratio);    // 1rem
+$fontSize-large:        ms(1, $ms-base,  $ms-ratio);    // 1.18519rem
+$fontSize-xlarge:       ms(2, $ms-base, $ms-ratio);     // 1.5rem
+$fontSize-xxlarge:      ms(3, $ms-base, $ms-ratio);     // 1.77778rem
+$fontSize-xxxlarge:     ms(4, $ms-base, $ms-ratio);     // 2.25rem
+$fontSize-xxxxlarge:    ms(5, $ms-base, $ms-ratio);     // 2.66667rem
+
+$lineHeight-base: 1.5;
+
+$lineHeight-xxxsmall:     $fontSize-xxxsmall * $lineHeight-base;  // .79012rem
+$lineHeight-xxsmall:      $fontSize-xxsmall * $lineHeight-base;   // 1rem
+$lineHeight-xsmall:       $fontSize-xsmall * $lineHeight-base;    // 1.18519rem
+$lineHeight-small:        $fontSize-small * $lineHeight-base;     // 1.5rem
+$lineHeight-normal:       $fontSize-normal * $lineHeight-base;    // 1.77778rem
+$lineHeight-large:        $fontSize-large * $lineHeight-base;     // 2.25rem
+$lineHeight-xlarge:       $fontSize-xlarge * $lineHeight-base;    // 2.66667rem
+$lineHeight-xxlarge:      $fontSize-xxlarge * $lineHeight-base;   // 3.375rem
+$lineHeight-xxxlarge:     $fontSize-xxxlarge * $lineHeight-base;  // 4rem

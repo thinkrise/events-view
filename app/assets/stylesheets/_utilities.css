@@ -1,0 +1,7 @@
+.u-clearfix {
+  @include clearfix;
+}
+
+.u-relative {
+  position: relative;
+}

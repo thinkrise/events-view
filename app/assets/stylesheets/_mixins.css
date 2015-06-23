@@ -1,0 +1,42 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin font-size($sizeValue: 1.6) {
+  // font-size: ($sizeValue * 10) + px; // @TODO: Removed for testing
+  font-size: $sizeValue + rem;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    @content
+  }
+
+  &::-moz-placeholder {  /* Firefox 19+ */
+    @content
+  }
+
+  &:-ms-input-placeholder {
+    @content
+  }
+}
+
+@mixin mq($point) {
+  @if $point == large {
+    @media #{$mediaDesktop} { @content; }
+  }
+  @else if $point == tablet {
+    @media #{$mediaTablet} { @content; }
+  }
+  @else if $point == mobile {
+    @media #{$mediaMobile}  { @content; }
+  }
+}

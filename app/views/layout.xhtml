@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <head>
+    <title>{{title}}{{^title}}Omnijar Coffee{{/title}}</title>
+    <meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+    <link rel="stylesheet" href="/stylesheets/main.css" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'/>
+    <link rel="apple-touch-icon" href="/images/touch-icon-iphone.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/touch-icon-iphone-retina.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/touch-icon-ipad-retina.png" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script type="text/javascript">
+      window.config = {};
+    </script>
+  </head>
+  <body class="{{bodyClass}}">
+  {{> spritesheet}}
+  {{> header}}
+
+  {{> form-messages}}
+
+  {{{body}}}
+
+  {{#include.signUpForm}}{{> sign-up_form}}{{/include.signUpForm}}
+
+  {{#footer}}
+  {{> footer}}
+  {{/footer}}
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+    <script src="/javascript/main.js"></script>
+  </body>
+</html>

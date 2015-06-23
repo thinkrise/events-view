@@ -1,0 +1,55 @@
+{
+  "name": "yirga",
+  "version": "0.0.1",
+  "description": "Source and discover the best coffee near you.",
+  "author": "Phil J. Laszkowicz <phil@fillip.pro> (https://github.com/siilime)",
+  "contributors": [
+    "Ed Newland-Pratt <epgnewlandpratt@gmail.com> (https://github.com/ednp)",
+    "Bobby Bobak <bobak.art@gmail.com> (https://github.com/bobek-balinek)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siilime/yirga.git"
+  },
+  "license": "(LicenseRef-LICENSE)",
+  "config": {
+    "port": "4001"
+  },
+  "scripts": {
+    "start": "node ./bin/yirga.js &"
+  },
+  "main": "./app/index.js",
+  "bin": {
+    "yirga": "./app/index.js"
+  },
+  "preferGlobal": false,
+  "private": true,
+  "engines": {
+    "node": ">= 0.12"
+  },
+  "dependencies": {
+    "body-parser": "~1.12.x",
+    "debug": "~2.2.x",
+    "express": "~4.12.x",
+    "express-hbs": "^0.8.4",
+    "express-winston": "~0.3.x",
+    "graceful-fs": "~3.0.x",
+    "handlebars": "^3.0.3",
+    "lodash": "~3.9.x",
+    "request": "~2.57.x",
+    "winston": "~1.0.x"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.6",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-browserify": "^0.5.1",
+    "del": "^1.2.x",
+    "gulp-if": "^1.2.5",
+    "gulp-jshint": "^1.11.0",
+    "gulp-minify-css": "^1.1.6",
+    "gulp-uglify": "^1.2.0",
+    "yargs": "^3.10.0",
+    "vinyl": "^0.4.6",
+    "gulp-svg-sprite": "^1.2.3"
+  }
+}
